@@ -1,0 +1,345 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+.navbar {
+  background-color: #314f65;
+  padding: 10px;
+  gap: 60px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 1;
+  position: relative;
+  left: 800px;
+  top: 10px;
+}
+
+.nav-link:hover {
+  transform: translateY(-5px);
+  text-decoration: underline;
+}
+
+.titulosobre {
+  color: #314f65;
+  font-size: 30px;
+}
+
+.contImgSobre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
+}
+
+.imgsobre1 {
+  width: 50%;
+  height: 50%;
+  background-image: url(../../img/imgsobre.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgsobre2 {
+  width: 73%;
+  height: 73%;
+  background-image: url(../../img/imgsobre2.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ContTextSobre {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
+}
+
+.textsobre1,
+.textsobre2 {
+  color: #284153;
+  font-size: 24px;
+  margin: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.linha {
+  background-color: #35367dd1;
+  width: 2px;
+  height: 200px;
+  position: absolute;
+  bottom: 420px;
+  left: 25px;
+}
+
+.textMais {
+  color: #35367d;
+  font-size: 25px;
+  margin: 20px;
+  width: 50%;
+  position: absolute;
+  bottom: 95px;
+  left: 25px;
+}
+
+.link {
+  color: #35367d;
+  font-size: 15px;
+  margin: 20px;
+  width: 50%;
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link2 {
+  color: #35367d;
+  font-size: 15px;
+  margin: 20px;
+  width: 50%;
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.containerPrincipal {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+@media (width: 1920px) and (height: 1080px) {
+  .containerimg {
+    background-size: 33%;
+    right: 85px;
+  }
+
+  .titulosobre {
+    font-size: 45px;
+    top: 40px;
+    left: 25px;
+  }
+
+  .textsobre {
+    font-size: 40px;
+    top: 130px;
+    left: 25px;
+  }
+
+  .textMais {
+    font-size: 30px;
+    bottom: 95px;
+    left: 25px;
+  }
+
+  .link {
+    font-size: 20px;
+    bottom: 50px;
+    left: 25px;
+  }
+
+  .link2 {
+    font-size: 20px;
+    bottom: 5px;
+    left: 25px;
+  }
+
+  .navbar {
+    right: 100px;
+  }
+
+  .nav-link {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .containerPrincipal {
+    height: 125vh;
+  }
+
+  .titulosobre {
+    font-size: 40px;
+    width: 50%;
+    position: absolute;
+    top: 70px;
+    left: 520px;
+  }
+
+  .imgsobre1 {
+    position: absolute;
+    bottom: 300px;
+    left: 630px;
+  }
+
+  .imgsobre2 {
+    position: absolute;
+    bottom: 230px;
+    right: 500px;
+  }
+
+  .navbar {
+    z-index: 999;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    left: 640px;
+  }
+
+  .ContTextSobre {
+    top: 350px;
+  }
+
+  .textsobre1,
+  .textsobre2 {
+    font-size: 22px;
+    margin: 50px;
+    text-align: justify;
+  }
+
+  .linha {
+    backdrop-filter: blur(50px);
+    z-index: 1;
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    top: 380px;
+    left: 645px;
+  }
+
+  .textMais {
+    font-size: 22px;
+    text-decoration: underline;
+    position: absolute;
+    top: 710px;
+    left: 300px;
+  }
+
+  .link {
+    font-size: 17px;
+    position: absolute;
+    top: 695px;
+    left: 550px;
+  }
+
+  .link2 {
+    font-size: 17px;
+    position: absolute;
+    top: 720px;
+    left: 550px;
+  }
+}
+
+@media (max-width: 430px) and (max-height: 932px) {
+  .containerPrincipal {
+    height: 120vh;
+  }
+
+  .contImgSobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgsobre1 {
+    width: 90%;
+    position: absolute;
+    bottom: 180px;
+    left: 20px;
+  }
+
+  .imgsobre2 {
+    width: 90%;
+    position: absolute;
+    bottom: 490px;
+    left: 20px;
+  }
+
+  .navbaratvd2 {
+    background-color: #314f65 !important;
+  }
+
+  .nav-link {
+    display: none;
+    font-size: 15px;
+    left: 10px;
+  }
+
+  .titulosobre {
+    font-size: 34px;
+    position: absolute;
+    top: 70px;
+    left: 110px;
+  }
+
+  .ContTextSobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textsobre1 {
+    font-size: 18px;
+    width: auto;
+    position: absolute;
+    top: 150px;
+  }
+
+  .textsobre2 {
+    font-size: 18px;
+    width: auto;
+    position: absolute;
+    top: 600px;
+  }
+
+  .linha {
+    display: none;
+  }
+
+  .textMais {
+    font-size: 20px;
+    position: absolute;
+    top: 950px;
+    left: 0;
+  }
+
+  .link {
+    font-size: 15px;
+    top: 980px;
+    left: 0;
+  }
+
+  .link2 {
+    font-size: 15px;
+    top: 1000px;
+    left: 0;
+  }
+}
